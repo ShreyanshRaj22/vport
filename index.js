@@ -75,13 +75,13 @@ document.querySelector('.right').addEventListener('click', () => {
 
 startSlideShow();
 
-//till here
+//till here.
 
 
 /**/ 
 
 // $(".carousel .carousel-item").each(function () {
-//   var minPerSlide = 5; // Set the desired number of cards per slide
+//   var minPerSlide = 5; // Set the desired number of cards. per slide
 //   var next = $(this).next();
 
 //   if (!next.length) {
