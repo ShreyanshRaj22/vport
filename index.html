@@ -38,28 +38,57 @@
     </nav>
   </div>
   <div class="banner-img" style="width: 100%; height: 65vh;overflow: hidden;">
-    <img style="width: 100%;" src="/images/banner-1.jpg" alt="" />
+    <img style="width: 100%;" src="./images/banner-1.jpg" alt="" />
     <div class="about">
-      Center of Space Science Research<br />
-      @ National Institute of Technology Delhi
+      <div class="CSSR">Center of Space Science Research</div><br />
+      <div class="NITD">National Institute of Technology Delhi</div>
     </div>
   </div>
-  <div id="myCarousel" class="carousel slide container" data-bs-ride="carousel">
+
+
+  <div class="image-slider">
+    <button class="arrow left" onclick="moveSlide(-1)">&#10094;</button>
+    <div class="slider-container">
+        <div class="slides">
+            <div class="slide"><img src="./carousel-image/image1.jpg" alt="Slide 1"></div>
+            <div class="slide"><img src="./carousel-image/image2.jpg" alt="Slide 2"></div>
+            <div class="slide"><img src="./carousel-image/image3.jpg" alt="Slide 3"></div>
+            <div class="slide"><img src="./carousel-image/image4.jpg" alt="Slide 4"></div>
+            <div class="slide"><img src="./carousel-image/image5.jpg" alt="Slide 5"></div>
+            <div class="slide"><img src="./carousel-image/image6.jpg" alt="Slide 6"></div>
+            <div class="slide"><img src="./carousel-image/image7.jpg" alt="Slide 7"></div>
+            <div class="slide"><img src="./carousel-image/image8.jpg" alt="Slide 8"></div>
+            <div class="slide"><img src="./carousel-image/image9.jpg" alt="Slide 9"></div>
+            <div class="slide"><img src="./images/image9.jpg" alt="Slide 10"></div>
+            <div class="slide"><img src="./images/image10.jpg" alt="Slide 11"></div>
+            <div class="slide"><img src="./images/image11.jpg" alt="Slide 12"></div>
+            <div class="slide"><img src="./images/image12.jpg" alt="Slide 13"></div>
+            <div class="slide"><img src="./images/image13.jpg" alt="Slide 14"></div>
+            <div class="slide"><img src="./images/image14.jpg" alt="Slide 15"></div>
+            <div class="slide"><img src="./images/image15.jpg" alt="Slide 16"></div>
+        </div>
+    </div>
+    <button class="arrow right" onclick="moveSlide(1)">&#10095;</button>
+</div>
+
+
+ 
+  <!-- <div id="myCarousel" class="carousel slide container" data-bs-ride="carousel">
     <div class="carousel-inner w-100">
       <div class="carousel-item active">
         <div class="col-md-3">
           <div class="card card-body height-set" onclick="openModal(1)"
             style="border-radius: 50%; display: flex; align-items: center; justify-content: center;">
-            <img class="img-fluid" src="/carousel-image/image1.jpg" style="max-width: 100%; max-height: 100%;" />
+            <img class="img-fluid" src="./carousel-image/image12.jpg" style="border-radius: 50%; max-width: 100%; max-height: 100%;" />
           </div>
         </div>
-      </div>
+      </div> -->
       <!-- Repeat the structure for each carousel item with adjusted modal IDs and image sources -->
-      <div class="carousel-item">
+      <!-- <div class="carousel-item">
         <div class="col-md-3">
           <div class="card card-body height-set" onclick="openModal(2)"
             style="border-radius: 50%; display: flex; align-items: center; justify-content: center;">
-            <img class="img-fluid" src="/carousel-image/image2.jpg" style="max-width: 100%; max-height: 100%;" />
+            <img class="img-fluid" src="./carousel-image/image8.jpg" style="border-radius: 50%; max-width: 100%; max-height: 100%;" />
           </div>
         </div>
       </div>
@@ -67,17 +96,17 @@
         <div class="col-md-3">
           <div class="card card-body height-set" onclick="openModal(3)"
             style="border-radius: 50%; display: flex; align-items: center; justify-content: center;">
-            <img class="img-fluid" src="/carousel-image/image3.jpg" style="max-width: 100%; max-height: 100%;" />
+            <img class="img-fluid" src="./carousel-image/image10.jpg" style="border-radius: 50%; max-width: 100%; max-height: 100%;" />
           </div>
         </div>
       </div>
-            </div>
+            </div> -->
       <!-- Continue with the same pattern for the rest of the items -->
-      <div class="carousel-item">
+      <!-- <div class="carousel-item">
         <div class="col-md-3">
           <div class="card card-body height-set" onclick="openModal(4)"
             style="border-radius: 50%; display: flex; align-items: center; justify-content: center;">
-            <img class="img-fluid" src="/carousel-image/image4.jpg" style="max-width: 100%; max-height: 100%;" />
+            <img class="img-fluid" src="./carousel-image/image4.jpg" style="max-width: 100%; max-height: 100%;" />
           </div>
         </div>
       </div>
@@ -85,7 +114,7 @@
         <div class="col-md-3">
           <div class="card card-body height-set" onclick="openModal(5)"
             style="border-radius: 50%; display: flex; align-items: center; justify-content: center;">
-            <img class="img-fluid" src="/carousel-image/image5.jpg" style="max-width: 100%; max-height: 100%;" />
+            <img class="img-fluid" src="./carousel-image/image5.jpg" style="max-width: 100%; max-height: 100%;" />
           </div>
         </div>
       </div>
@@ -93,7 +122,7 @@
         <div class="col-md-3">
           <div class="card card-body height-set" onclick="openModal(6)"
             style="border-radius: 50%; display: flex; align-items: center; justify-content: center;">
-            <img class="img-fluid" src="/carousel-image/image6.jpg" style="max-width: 100%; max-height: 100%;" />
+            <img class="img-fluid" src="./carousel-image/image6.jpg" style="max-width: 100%; max-height: 100%;" />
           </div>
         </div>
       </div>
@@ -101,7 +130,7 @@
         <div class="col-md-3">
           <div class="card card-body height-set" onclick="openModal(7)"
             style="border-radius: 50%; display: flex; align-items: center; justify-content: center;">
-            <img class="img-fluid" src="/carousel-image/image7.jpg" style="max-width: 100%; max-height: 100%;" />
+            <img class="img-fluid" src="./carousel-image/image7.jpg" style="max-width: 100%; max-height: 100%;" />
           </div>
         </div>
       </div>
@@ -109,7 +138,7 @@
         <div class="col-md-3">
           <div class="card card-body height-set" onclick="openModal(8)"
             style="border-radius: 50%; display: flex; align-items: center; justify-content: center;">
-            <img class="img-fluid" src="/carousel-image/image8.jpg" style="max-width: 100%; max-height: 100%;" />
+            <img class="img-fluid" src="./carousel-image/image8.jpg" style="border-radius: 50%; max-width: 100%; max-height: 100%;" />
           </div>
         </div>
       </div>
@@ -117,7 +146,7 @@
         <div class="col-md-3">
           <div class="card card-body height-set" onclick="openModal(9)"
             style="border-radius: 50%; display: flex; align-items: center; justify-content: center;">
-            <img class="img-fluid" src="/carousel-image/image9.jpg" style="max-width: 100%; max-height: 100%;" />
+            <img class="img-fluid" src="./carousel-image/image9.jpg" style="border-radius: 50%; max-width: 100%; max-height: 100%;" />
           </div>
         </div>
       </div>
@@ -125,7 +154,7 @@
         <div class="col-md-3">
           <div class="card card-body height-set" onclick="openModal(10)"
             style="border-radius: 50%; display: flex; align-items: center; justify-content: center;">
-            <img class="img-fluid" src="/carousel-image/image10.jpg" style="max-width: 100%; max-height: 100%;" />
+            <img class="img-fluid" src="./carousel-image/image10.jpg" style="border-radius: 50%; max-width: 100%; max-height: 100%;" />
           </div>
         </div>
       </div>
@@ -133,7 +162,7 @@
         <div class="col-md-3">
           <div class="card card-body height-set" onclick="openModal(11)"
             style="border-radius: 50%; display: flex; align-items: center; justify-content: center;">
-            <img class="img-fluid" src="/carousel-image/image11.jpg" style="max-width: 100%; max-height: 100%;" />
+            <img class="img-fluid" src="./carousel-image/image11.jpg" style="border-radius: 50%; max-width: 100%; max-height: 100%;" />
           </div>
         </div>
       </div>
@@ -141,7 +170,7 @@
         <div class="col-md-3">
           <div class="card card-body height-set" onclick="openModal(12)"
             style="border-radius: 50%; display: flex; align-items: center; justify-content: center;">
-            <img class="img-fluid" src="/carousel-image/image12.jpg" style="max-width: 100%; max-height: 100%;" />
+            <img class="img-fluid" src="./carousel-image/image12.jpg" style="border-radius: 50%; max-width: 100%; max-height: 100%;" />
           </div>
         </div>
       </div>
@@ -149,7 +178,7 @@
         <div class="col-md-3">
           <div class="card card-body height-set" onclick="openModal(13)"
             style="border-radius: 50%; display: flex; align-items: center; justify-content: center;">
-            <img class="img-fluid" src="/carousel-image/image13.jpg" style="max-width: 100%; max-height: 100%;" />
+            <img class="img-fluid" src="./carousel-image/image13.jpg" style="border-radius: 50%; max-width: 100%; max-height: 100%;" />
           </div>
         </div>
       </div>
@@ -157,7 +186,7 @@
         <div class="col-md-3">
           <div class="card card-body height-set" onclick="openModal(14)"
             style="border-radius: 50%; display: flex; align-items: center; justify-content: center;">
-            <img class="img-fluid" src="/carousel-image/image14.jpg" style="max-width: 100%; max-height: 100%;" />
+            <img class="img-fluid" src="./carousel-image/image14.jpg" style="border-radius: 50%; max-width: 100%; max-height: 100%;" />
           </div>
         </div>
       </div>
@@ -165,7 +194,7 @@
         <div class="col-md-3">
           <div class="card card-body height-set" onclick="openModal(15)"
             style="border-radius: 50%; display: flex; align-items: center; justify-content: center;">
-            <img class="img-fluid" src="/carousel-image/image15.jpg" style="max-width: 100%; max-height: 100%;" />
+            <img class="img-fluid" src="./carousel-image/image15.jpg" style="border-radius: 50%; max-width: 100%; max-height: 100%;" />
           </div>
         </div>
       </div>
@@ -173,7 +202,7 @@
         <div class="col-md-3">
           <div class="card card-body height-set" onclick="openModal(16)"
             style="border-radius: 50%; display: flex; align-items: center; justify-content: center;">
-            <img class="img-fluid" src="/carousel-image/image16.jpg" style="max-width: 100%; max-height: 100%;" />
+            <img class="img-fluid" src="./carousel-image/image16.jpg" style="border-radius: 50%; max-width: 100%; max-height: 100%;" />
           </div>
         </div>
       </div>    
@@ -181,29 +210,62 @@
         <div class="col-md-3">
           <div class="card card-body height-set" onclick="openModal(17)"
             style="border-radius: 50%; display: flex; align-items: center; justify-content: center;">
-            <img class="img-fluid" src="/carousel-image/new2.jpg" style="max-width: 100%; max-height: 100%;" />
+            <img class="img-fluid" src="./carousel-image/new2.jpg" style="border-radius: 50%; max-width: 100%; max-height: 100%;" />
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
   
-    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev"
-      style="padding-right: 150px;">
+    <!-- <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev"
+      style="padding-right: 150px; top: 90%;">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Previous</span>
     </button>
     <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next"
-      style="padding-left: 150px;">
+      style="padding-left: 150px; top: 90%;">
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Next</span>
     </button>
-  </div>
+  </div> -->
 
   <hr>
   <div class="name-header">
     <h1>Dr. Vinay Shankar Pandey</h1>
   </div>
-  <div class="about-me" id="aboutMe">
+  <div class="VSPsection">
+    <h1 class="title">Dr. Vinay Shankar Pandey</h1>
+
+
+    <div class="about-section">
+        <div class="about-text">
+      <p id="auto-write"></p>
+        </div>
+        <div class="about-image">
+      <!--  style="float: left;padding-right: 5%;padding-bottom: 2%; padding-left: 6%; width: 40%; height: 40%;"  -->
+      <img
+      src="./images/VSP.jpg" alt="Dr. Vinay Shankar Pandey Photo">
+        </div>
+    </div>
+
+    <script>
+      const text = `Dr. Vinay Shankar Pandey is a dedicated and accomplished scholar, currently serving as an Associate Professor at the esteemed National Institute of Technology (NIT) Delhi, India. With a robust background in the Department of Applied Sciences, Dr. V S Pandey has significantly advanced the field of electromagnetic wave research, with a particular focus on plasma and dielectric media. His expertise extends to the domain of dielectric resonator antennas, where he has made notable advancements, further solidifying his reputation as a leading researcher in this specialized area. Dr. V S Pandey's contributions continue to impact and drive progress in the scientific community.Vinay's research interests are diverse and span across various fascinating areas of science. He has a keen focus on electromagnetic waves in plasma and dielectric media, a topic of paramount importance in our increasingly interconnected world. His work in this domain contributes to the understanding of how these waves propagate and interact in different mediums, which has implications in various fields, including telecommunications and materials science.Vinay Shankar Pandey has delved into cutting-edge research. Area of Thrust: EM waves in Different media; MHD modeling of the transient, Phenomena of Sun and Interplanetary Space, MHD-Fluid, MHD Simulations, Nonlinear Plasma Theory, Non-uniform and Non-linear Transmission lines, Antennas and Waves propagation, and CMOS VLSI Design.;`
+    
+      let index = 0;
+      function typeText() {
+        if (index < text.length) {
+          document.getElementById("auto-write").textContent += text.charAt(index);
+          index++;
+          setTimeout(typeText, 30); // Adjust typing speed here (50ms per character)
+        }
+      }
+      
+      window.onload = function() {
+        typeText();
+      };
+    </script>
+
+</div>
+  <!-- <div class="about-me" id="aboutMe">
 
 
 
@@ -231,20 +293,112 @@
         Transmission lines, Antennas and Waves propagation, and CMOS VLSI Design. </p>
     </div>
 
-  </div>
+  </div> -->
 
   <hr style="height: 2px;">
   <div class="heading" id="meetGroup">
     <h1 style="margin-left:4%;">Meet Our Group</h1>
   </div>
 
+
+
+
+
+  <div class="team-section">
+    <!-- Card 1 -->
+
+
+    <div class="team-card">
+        <div class="card-image">
+          <img src="./images/Rajesh_Yadav.png1.jpg" alt="Team Member Photo">
+        </div>
+        <h3 class="h3name">Rajesh Yadav</h3>
+        <p class="p">Research Scholar</p>
+          <br>
+          <p class="p">Department of Physics NIT Delhi</p>
+        <a href="https://drive.google.com/file/d/1rklfgK_vcRtJqehcEHZctEeLN9oOBXxz/view?usp=sharing" target="_blank" class="resume-link">View Resume</a>
+    </div>
+    <div class="team-card">
+      <div class="card-image">
+        <img src="./images/Ankit.png1.jpg" alt="Team Member Photo">
+      </div>
+      <h3 class="h3name">Ankit Kumar</h3>
+      <p class="p">Research Scholar</p>
+        <br>
+        <p class="p">Department of Physics NIT Delhi</p>
+      <a href="https://drive.google.com/file/d/1jnjwdnMB6CZFIas5d8ndYYeS0Afol25E/view?usp=sharing" target="_blank" class="resume-link">View Resume</a>
+    </div>
+    
+    <div class="team-card">
+        <div class="card-image">
+          <img src="./images/Shilpa_Patra.png1.jpg" alt="Team Member Photo">
+        </div>
+        <h3 class="h3name">Shilpa Patra</h3>
+        <p class="p">Research Scholar</p>
+          <br>
+          <p class="p">Department of Physics NIT Delhi</p>
+        <a href="https://drive.google.com/file/d/1xHJYPrJGVi0ksZST5ztNowHDTb2lMz7i/view?usp=sharing" target="_blank" class="resume-link">View Resume</a>
+    </div>
+
+    <div class="team-card">
+        <div class="card-image">
+          <img src="./images/Shakti_Singh.png.jpg" alt="Team Member Photo">
+        </div>
+        <h3 class="h3name">Shakti Singh</h3>
+        <p class="p">Research Scholar</p>
+          <br>
+          <p class="p">Department of Physics NIT Delhi</p>
+        <a href="https://drive.google.com/file/d/108bvwgtsNaK0OST7WnI9HPKgSrdqIdmO/view?usp=sharing" target="_blank" class="resume-link">View Resume</a>
+      </div>
+    <div class="team-card">
+        <div class="card-image">
+          <img src="./images/Himani_Mehta.png1.jpg" alt="Team Member Photo">
+        </div>
+        <h3 class="h3name">Himani Mehta</h3>
+        <p class="p">Research Scholar</p>
+          <br>
+          <p class="p">Department of Physics NIT Delhi</p>
+        <a href="https://drive.google.com/file/d/1on-vSHyUPg1EGpOfm0N4j0RUxqKZhCxt/view?usp=sharing" target="_blank" class="resume-link">View Resume</a>
+    </div>
+    <div class="team-card">
+        <div class="card-image">
+          <img src="./images/shweta_Singh.png1.jpg" alt="Team Member Photo">
+        </div>
+        <h3 class="h3name">Shweta Singh</h3>
+        <p class="p">Research Scholar</p>
+          <br>
+          <p class="p">Department of Physics NIT Delhi</p>
+        <a href="https://drive.google.com/file/d/1UgdzuaIXG0ZAxLkyqiFfmmLLy6DBEOHw/view?usp=drivesdk" target="_blank" class="resume-link">View Resume</a>
+    </div>
+    <div class="team-card">
+        <div class="card-image">
+          <img src="./images/Praveen.jpg" alt="Team Member Photo">
+        </div>
+        <h3 class= "h3name">Pravin Kumar</h3>
+        <p class="p">Research Scholar</p>
+          <br>
+          <p class="p">Department of Physics NIT Delhi</p>
+        <a href="https://drive.google.com/file/d/1e5hZ5kYBakgFZT3D0E1dpoXGwnLi_gdl/view?usp=sharing" target="_blank" class="resume-link">View Resume</a>
+    </div>
+    <div class="team-card">
+        <div class="card-image">
+          <img src="./images/satyanarayan1.jpg" alt="Team Member Photo">
+        </div>
+        <h3 class="h3name">Satyanarayan Parida</h3>
+        <p class="p">Research Scholar</p>
+          <br>
+          <p class="p">Department of Physics NIT Delhi</p>
+        <a href="https://drive.google.com/file/d/1pAXIyuKj0KKQN7Et7wH8lINNmfyE2htq/view?usp=sharing" target="_blank" class="resume-link">View Resume</a>
+    </div>
+    <!-- Repeat similar cards for all 8 members -->
+</div>
   
 
-  <div class="row row-cols-1 row-cols-md-4 g-4 cards-container">
+  <!-- <div class="row row-cols-1 row-cols-md-4 g-4 cards-container">
     <div class="col card-container">
       <div class="card" style="border: none;">
         <div class="object-image" style="height: auto;">
-          <img src="/images/Rajesh_Yadav.png1.jpg" style="height: 100%;" class="card-img-top" alt="Rajesh_Yadav">
+          <img src="./images/Rajesh_Yadav.png1.jpg" style="height: 100%;" class="card-img-top" alt="Rajesh_Yadav">
         </div>
         <div class="card-body">
           <h5 class="card-title" style="font-size: 28px;">Rajesh Yadav</h5>
@@ -258,7 +412,7 @@
     <div class="col card-container">
       <div class="card" style="border: none;">
         <div class="object-image" style="height: auto;">
-          <img src="/images/Ankit.png1.jpg" style="height: 100%;" class="card-img-top" alt="Ankit">
+          <img src="./images/Ankit.png1.jpg" style="height: 100%;" class="card-img-top" alt="Ankit">
         </div>
         <div class="card-body">
           <h5 class="card-title" style="font-size: 28px;">Ankit Kumar</h5>
@@ -272,7 +426,7 @@
     <div class="col card-container">
       <div class="card" style="border: none;">
         <div class="object-image" style="height: auto;">
-          <img src="/images/Shilpa_Patra.png1.jpg"  class="card-img-top" alt="Shilpa_Patra">
+          <img src="./images/Shilpa_Patra.png1.jpg"  class="card-img-top" alt="Shilpa_Patra">
         </div>
         <div class="card-body">
           <h5 class="card-title" style="font-size: 28px;">Shilpa Patra</h5>
@@ -286,7 +440,7 @@
     <div class="col card-container">
       <div class="card" style="border: none;">
         <div class="object-image" style="height: auto;">
-          <img src="/images/Shakti_Singh.png.jpg" style="height: 100%;" class="card-img-top" alt="Shakti_Singh">
+          <img src="./images/Shakti_Singh.png.jpg" style="height: 100%;" class="card-img-top" alt="Shakti_Singh">
         </div>
         <div class="card-body">
           <h5 class="card-title" style="font-size: 28px;">Shakti Singh</h5>
@@ -300,7 +454,7 @@
     <div class="col">
       <div class="card" style="border: none;">
         <div class="object-image" style="height: auto;">
-          <img src="/images/Himani_Mehta.png1.jpg" style="height: 100%;" class="card-img-top" alt="Himani_Mehta">
+          <img src="./images/Himani_Mehta.png1.jpg" style="height: 100%;" class="card-img-top" alt="Himani_Mehta">
         </div>
         <div class="card-body">
           <h5 class="card-title" style="font-size: 28px;">Himani Mehta</h5>
@@ -315,7 +469,7 @@
     <div class="col card-container">
       <div class="card" style="border: none;">
         <div class="object-image" style="height: auto;">
-          <img src="/images/shweta_Singh.png1.jpg" style="height: 100%;" class="card-img-top" alt="shweta_Singh">
+          <img src="./images/shweta_Singh.png1.jpg" style="height: 100%;" class="card-img-top" alt="shweta_Singh">
         </div>
         <div class="card-body">
           <h5 class="card-title" style="font-size: 28px;">Sweta Singh</h5>
@@ -329,7 +483,7 @@
     <div class="col card-container">
       <div class="card" style="border: none;">
         <div class="object-image" style="height: auto;">
-          <img src="/images/Praveen.jpg" style="height: 100%;" class="card-img-top" alt="Praveen">
+          <img src="./images/Praveen.jpg" style="height: 100%;" class="card-img-top" alt="Praveen">
         </div>
         <div class="card-body">
           <h5 class="card-title" style="font-size: 28px;">Praveen Kumar Chakravati</h5>
@@ -343,7 +497,7 @@
     <div class="col card-container">
       <div class="card" style="border: none;">
         <div class="object-image" style="height: auto;">
-          <img src="/images/satyanarayan1.jpg" style="height: 100%;" class="card-img-top" alt="Satyanarayan">
+          <img src="./images/satyanarayan1.jpg" style="height: 100%;" class="card-img-top" alt="Satyanarayan">
         </div>
         <div class="card-body">
           <h5 class="card-title" style="font-size: 28px;">Satyanarayan Parida</h5>
@@ -354,7 +508,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
   <hr>
   <div class="publications">
     <div class="journal">
