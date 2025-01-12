@@ -26,6 +26,14 @@
 .card {
     border: 1px solid transparent; /* This will remove the border by making it transparent */
 }
+.CSSR{
+    width: 100%;
+
+}
+.NITD{
+    width: 93%;
+    text-align: center;
+}
   
   
 @media (min-width: 768px) {
@@ -56,6 +64,7 @@
 /* For the sliding effect*/
 
 .image-slider {
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -71,7 +80,7 @@
   }
   
   .slider-container {
-    width: 1400px; /* Adjust to fit 4 images perfectly */
+    width: 100%; /* Adjust to fit 4 images perfectly */
     overflow: hidden;
   }
   
@@ -115,52 +124,7 @@
   
 
 
-/* .slider {
-    position: relative;
-    margin: 20px auto;
-    width: 80%;
-    max-width: 600px;
-    overflow: hidden; 
-}
 
-.slides {
-    display: flex; 
-    transition: transform 0.5s ease; 
-}
-
-.slide {
-    
-     min-width: 100%; 
-    border-radius: 50%;
-    object-fit: contain;
-    align-items: center;
-    justify-content: center;
-    height: 300px; 
-    display: flex;
-}
-
-.arrow {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    cursor: pointer;
-    padding: 10px;
-    z-index: 1;
-}
-
-.left {
-    padding-left:150px ;
-    top: 90%;
-}
-
-.right {
-    padding-right: 150px;
-    top: 90%;
-} */
-/**/
 
 #myCarousel{
     padding-top: 3%;
@@ -204,7 +168,7 @@ hr{
   .team-card {
     background-color: #333;
     width: 300px;
-    margin: 20px;
+    margin: 2px;
     text-align: center;
     border-radius: 10px;
     overflow: hidden;
@@ -236,9 +200,21 @@ hr{
     
     font-size: 1.5em;
     color: #fff;
-    margin: 20px 0 10px;
+    margin-top: 2px; /* Adjusted margin */
+    margin-bottom: 2px;
   }
-  
+  .team-card h3{
+    color: #fff;
+    margin-top: 2px; /* Adjusted margin */
+    margin-bottom: 2px;
+    
+  }
+
+  .team-card p {
+    color: #ccc;
+    margin: 2px 0; /* Reduced gap */
+    
+}
   .resume-link {
     display: inline-block;
     bottom: 10%;
@@ -532,4 +508,93 @@ hr{
     height: 100%;
     background-color: rgba(0, 0, 0, 0.7);
     z-index: 999;
+}
+
+
+
+
+/* ---------------------------------------------------------------------------------------------- */
+/* .container {
+    max-width: 100%;
+    margin: 0 auto;
+    background-color: #2A2626;
+    color: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.container h1 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: white;
+}
+
+.patent {
+    width: auto;
+    margin-bottom: 20px;
+    padding: 15px;
+    color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #2A2626;
+}
+
+.patent h2 {
+    font-size: 1.2em;
+    color: #333;
+}
+
+.patent p {
+    margin-top: 8px;
+    font-size: 1em;
+}
+
+.patent strong {
+    color: white;
+} */
+
+/* ------------------ */
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #2A2626;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.container h1 {
+    text-align: left;
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: white;
+}
+
+.patent {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #2A2626;
+    color: white;
+    width: 100%;
+}
+
+.patent h2 {
+    font-size: 1.2em;
+    color: white;
+}
+
+.patent p {
+    margin-top: 8px;
+    font-size: 1em;
+    color: white;
+}
+
+.patent strong {
+    color: white;
 }
